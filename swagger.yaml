@@ -29,7 +29,7 @@ paths:
                   time_created:
                     description: Time created
                     type: string
-                  plugin_user_id:
+                  id:
                     description: Plugin user id
                     type: string
   /check_message:
@@ -111,6 +111,9 @@ paths:
               schema:
                 type: object
                 properties:
+                  id:
+                    description: User id
+                    type: string
                   username:
                     description: Username of twitter/tiktok user
                     type: string
@@ -163,6 +166,9 @@ paths:
                 properties:
                   time_created:
                     description: Time report is created
+                    type: string
+                  id:
+                    description: User id
                     type: string
                   username:
                     description: Username of twitter/tiktok user
