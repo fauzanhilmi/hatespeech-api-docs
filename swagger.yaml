@@ -168,7 +168,10 @@ paths:
                     description: Time report is created
                     type: string
                   id:
-                    description: User id
+                    description: Report id
+                    type: string
+                  reported_user_id:
+                    description: Reported social media user id
                     type: string
                   username:
                     description: Username of twitter/tiktok user
