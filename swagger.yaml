@@ -117,6 +117,9 @@ paths:
                   username:
                     description: Username of twitter/tiktok user
                     type: string
+                  platform:
+                    description: twitter/tiktok
+                    type: string
                   is_hateful:
                     description: Is the user hateful
                     type: boolean
@@ -255,6 +258,9 @@ paths:
                     enum:
                     - twitter
                     - tiktok
+                  reported_user_id:
+                    description: Reported user id
+                    type: string
                   reporter_user_id:
                     description: Reporter plugin user id
                     type: string
