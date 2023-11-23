@@ -33,7 +33,7 @@ paths:
                     description: Plugin user id
                     type: string
   /check_message:
-    post:
+    get:
       description: 'Check whether a message/tweet is hateful or misogynistic'
       requestBody:
         required: true
@@ -85,7 +85,7 @@ paths:
                       misogyny:
                         type: boolean
   /check_user:
-    post:
+    get:
       description: 'Check whether social media (Twitter/Tiktok) user is hateful'
       requestBody:
         required: true
