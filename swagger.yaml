@@ -148,8 +148,8 @@ paths:
                 reporter_user_id:
                   description: Reporter plugin user id
                   type: string
-                reason:
-                  description: Reason user is reported
+                reasons:
+                  description: Reasons user is reported
                   type: array
                   items:
                     type: string
@@ -188,8 +188,8 @@ paths:
                   reporter_user_id:
                     description: Reporter plugin user id
                     type: string
-                  reason:
-                    description: Reason user is reported
+                  reasons:
+                    description: Reasons user is reported
                     type: array
                     items:
                       type: string
@@ -227,8 +227,8 @@ paths:
                 reporter_user_id:
                   description: Reporter plugin user id
                   type: string
-                reason:
-                  description: Reason message is reported
+                reasons:
+                  description: Reasons message is reported
                   type: array
                   items:
                     type: string
@@ -276,8 +276,8 @@ paths:
                   reporter_user_id:
                     description: Reporter plugin user id
                     type: string
-                  reason:
-                    description: Reason message is reported
+                  reasons:
+                    description: Reasons message is reported
                     type: array
                     items:
                       type: string
