@@ -247,13 +247,16 @@ paths:
                 type: object
                 properties:
                   id:
-                    description: Internal message id / url
+                    description: Report id
                     type: string
                   time_created:
                     description: Time report is created
                     type: string
                   message:
                     description: Reported message
+                    type: string
+                  message_id:
+                    description: Internal message id / url
                     type: string
                   platform_message_id:
                     description: Reported message id / url
