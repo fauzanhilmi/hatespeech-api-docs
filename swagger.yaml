@@ -18,6 +18,8 @@ paths:
                 id:
                   description: Plugin user id
                   type: string
+              required:
+                - id
       responses:
         '200':
           description: Plugin user created
@@ -32,6 +34,9 @@ paths:
                   id:
                     description: Plugin user id
                     type: string
+                required:
+                  - time_created
+                  - id
   /check_message:
     get:
       description: 'Check whether a message/tweet is hateful or misogynistic'
