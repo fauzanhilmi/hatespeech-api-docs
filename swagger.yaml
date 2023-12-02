@@ -209,6 +209,14 @@ paths:
                   feedback:
                     description: Optional, feedback that is given by the reporter
                     type: string
+                required:
+                  - id
+                  - username
+                  - platform
+                  - reporter_user_id
+                  - reported_user_id
+                  - reasons
+                  - time_created
   /report_message:
     post:
       description: Report a message/tweet
@@ -223,7 +231,7 @@ paths:
                   description: Reported message
                   type: string
                 platform_message_id:
-                  description: Reported message id / url
+                  description: Optional, reported message id / url
                   type: string
                 username:
                   description: Username of twitter/tiktok user
@@ -248,6 +256,12 @@ paths:
                 feedback:
                   description: Optional, feedback that is given by the reporter
                   type: string
+              required:
+                  - username
+                  - platform
+                  - message
+                  - reporter_user_id
+                  - reasons
       responses:
         '200':
           description: Reporting successful
@@ -269,7 +283,7 @@ paths:
                     description: Internal message id / url
                     type: string
                   platform_message_id:
-                    description: Reported message id / url
+                    description: Optional, reported message id / url
                     type: string
                   username:
                     description: Username of twitter/tiktok user
@@ -280,9 +294,6 @@ paths:
                     enum:
                     - twitter
                     - tiktok
-                  reported_user_id:
-                    description: Reported user id
-                    type: string
                   reporter_user_id:
                     description: Reporter plugin user id
                     type: string
@@ -297,6 +308,16 @@ paths:
                   feedback:
                     description: Optional, feedback that is given by the reporter
                     type: string   
+                required:
+                  - id
+                  - username
+                  - platform
+                  - message
+                  - reporter_user_id
+                  - message_id
+                  - reasons
+                  - time_created
+                    
   
   
 
