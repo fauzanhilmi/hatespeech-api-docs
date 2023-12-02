@@ -164,6 +164,11 @@ paths:
                 feedback:
                   description: Optional, feedback that is given by the reporter
                   type: string
+              required:
+                - username
+                - platform
+                - reporter_user_id
+                - reasons
       responses:
         '200':
           description: Reporting successful
