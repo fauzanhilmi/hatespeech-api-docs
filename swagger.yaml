@@ -58,6 +58,9 @@ paths:
                     enum:
                       - hate
                       - misogyny
+                username:
+                  description: Username of the poster
+                  type: string
                 platform:
                   description: Social media platform
                   type: string
@@ -74,6 +77,9 @@ paths:
                 properties:
                   message:
                     description: Message / tweet
+                    type: string
+                  username:
+                    description: Username of the poster
                     type: string
                   platform:
                     description: Social media platform
