@@ -53,6 +53,9 @@ paths:
                 message:
                   description: Message / tweet
                   type: string
+                platform_message_id:
+                  description: Optional, reported message id / url
+                  type: string
                 models:
                   description: Selected models
                   type: array
@@ -83,6 +86,9 @@ paths:
                     type: string
                   message:
                     description: Message / tweet
+                    type: string
+                  platform_message_id:
+                    description: Optional, reported message id / url
                     type: string
                   username:
                     description: Username of the poster
