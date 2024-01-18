@@ -134,9 +134,6 @@ paths:
                   is_hateful:
                     description: Is the user hateful
                     type: boolean
-                  feedback:
-                    description: Feedback
-                    type: string
   /report_user:
     post:
       description: Report a Twitter/Tiktok user
